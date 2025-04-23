@@ -2,10 +2,14 @@
 
 function HomePage() {
     return (
-        <div>
-        <h1>Welcome to My Nutritionist App 🥦</h1>
-        <p>Use the menu above to get started!</p>
+        <div className="container fade-in">
+        <div className="columnLeft">
+          <h1 style={{ color: '#333', fontSize: '3rem', textAlign: 'center' }}>Your Personal AI Nutritionist</h1>
         </div>
+        <div className="columnRight">
+          <p>Something</p>
+        </div>
+      </div>
     );
 }
 

@@ -2,9 +2,33 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  padding: 4rem;
+  margin: 2rem;
+}
+
+.columnLeft {
+  flex: 1;
+  margin-right: 3rem; /* Space between the left and right columns */
+}
+
+.columnRight {
+  flex: 0 0 400px;  /* This makes sure the right column doesn't stretch */
+  background-color: #f0f0f0;  /* Optional: adds background color */
+  padding: 3rem;
+  height: 200px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
