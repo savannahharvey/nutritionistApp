@@ -6,7 +6,7 @@ function SearchPage() {
   const [token, setToken] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/token')
+    fetch("/api/token")
       .then(res => res.json())
       .then(data => setToken(data.access_token))
       .catch(err => console.error('Error fetching token', err));
@@ -15,10 +15,10 @@ function SearchPage() {
   const handleSearch = async () => {
     if (!searchTerm) return;
     try {
-      const response = await fetch(`http://localhost:5000/api/search?query=${encodeURIComponent(searchTerm)}`, {
+      const response = await fetch(`/api/search?query=${encodeURIComponent(searchTerm)}`, {
         headers: {
-          Authorization: `Bearer ${token}`
-        }
+          Authorization: `Bearer ${token}`,
+        },
       });
       const data = await response.json();
       const foodList = data.foods?.food ?? [];

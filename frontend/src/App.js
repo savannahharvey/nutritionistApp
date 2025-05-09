@@ -9,14 +9,14 @@ function App() {
     <Router>
       <div>
         {/* Navigation Bar */}
-        <nav style={{ marginBottom: '1rem' }}>
-          <Link to="/home" style={{ marginRight: '1rem' }}>Home</Link>
+        <nav class="topnav">
+          <Link to="/" style = {{ marginRight: 1 }}>Home</Link>
           <Link to="/search">Search</Link>
         </nav>
 
         {/* Pages based on route */}
         <Routes>
-          <Route path="/home" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/search" element={<SearchPage />} />
         </Routes>
       </div>
