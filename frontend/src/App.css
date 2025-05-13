@@ -62,3 +62,18 @@
 .App-link {
   color: #61dafb;
 }
+
+
+/* Welcome Page */
+a {
+  color:black;
+  margin: 10px;
+}
+
+menu {
+  margin:auto;
+}
+
+menu a {
+  margin: 10px;
+}
