@@ -29,7 +29,7 @@ function SearchPage() {
   };
 
   return (
-    <div>
+    <div style={{ margin: '3rem' }}>
       <h2>Search for Food</h2>
       <input
         type="text"
