@@ -47,6 +47,7 @@ const RecordPage = () => {
         {days.map((date, idx) => (
           <div key={idx} className="day-cell">
             {date ? date.getDate() : ''}
+            {date ? <a href="/recordDay" class="addMeal">Add Meal</a> : ''}
           </div>
         ))}
       </div>

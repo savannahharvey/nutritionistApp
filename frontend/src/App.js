@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import EmptyPage from './pages/EmptyPage';
 import RecordPage from './pages/RecordPage';
+import RecordDayPage from './pages/RecordDayPage';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/search" element={<SearchPage />} />
           <Route path="/empty" element={<EmptyPage />} />
           <Route path="/record" element={<RecordPage/>} />
+          <Route path="/recordDay" element={<RecordDayPage/>} />
         </Routes>
       </div>
     </Router>

@@ -19,7 +19,6 @@
   }
 }
 
-
 .container {
   display: flex;
   padding: 4rem;
@@ -88,7 +87,7 @@
   background-color: #aa88ff;
 }
 
-/* Record Page */
+/* Record Page Calendar */
 
 .calendar {
   max-width: 80%;
@@ -134,8 +133,19 @@
   font-weight: bold;
 }
 
+/* each cell */
 .day-cell {
   padding: 0.75rem 0;
   border: 1px solid #eee;
   min-height: 50px;
+
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.day-cell button {
+  margin-left: 20%;
+  margin-right: 20%;
+
+  grid-row: 2;
 }
